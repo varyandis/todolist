@@ -1,0 +1,31 @@
+/* Глобальные стили для проекта, их можно дополнять и менять по желанию */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  min-inline-size: 375px;
+  max-inline-size: 1024px;
+  margin: auto auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+button,
+a {
+  color: currentColor;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}

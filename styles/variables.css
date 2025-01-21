@@ -1,0 +1,17 @@
+:root {
+  --bg-color: #fff1f7;
+  --accent-color: #ff8dcb;
+  --accent-text-color: #353430;
+  --accent-text-color-title: #353430;
+  --text-color: #353430;
+  --accent-color-light-theme: #353430;
+  --accent-color-title: #ffc2e6;
+  --button-hover-color: rgba(50, 49, 45, 0.4);
+
+  --accent-color-dark-theme: #ff0070;
+  --accent-color-title: #db00ff;
+  --main-font: "IBM Plex Mono";
+  --main-font-weight: 400;
+  --accent-font-weight: 700;
+  --font-size: 18px;
+}

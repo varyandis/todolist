@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./fonts/fonts.css" />
+  <link rel="stylesheet" href="./styles/global.css" />
+  <link href="./styles/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/variables.css" />
+  <title>To Do List</title>
+</head>
+<body>
+  <header class="header">
+    <h1>To Do List</h1>
+  </header>
+  <main>
+    <section class="add-task">
+      <input class="add-task__input" type="text" minlength="1" maxlength="100" required autofocus placeholder="Task description">
+      <button class="add-task__button">Add task</button>
+    </section>
+    <section class="list-filter">
+      <button class="list-clear__button">Clear the list</button>
+      <div class="filter-tasks">
+        <label class="radio-label">
+          <input class="radio"
+          type="radio"
+          value="all"
+          id="all"
+          name="list"
+          checked
+          >
+          <span>All</span>
+        </label>
+        <label class="radio-label">
+          <input class="radio"
+          type="radio"
+          value="completed"
+          id="completed"
+          name="list"
+          >
+          <span>Completed</span>
+        </label>
+        <label class="radio-label">
+          <input class="radio"
+          type="radio"
+          value="active"
+          id="active"
+          name="list"
+          >
+          <span>Active</span>
+        </label>
+      </div>
+      <form >
+        <div>
+          <input type="text" id="mySearch" name="q" placeholder="Search"  class="search"/>
+        </div>
+      </form>
+    </section>
+    <section class="list">
+    </section>
+    <template class="template-task">
+      <div>
+        <span class="template-task__text">
+          Text
+        </span>
+        <div class="template-task__button">
+        <button class="template-task__button-delete">Delete</button>
+        <button class="template-task__button-todo">To Do</button>
+        <button class="template-task__button-edite">Edite</button>
+        </div>
+        <section class="template-task__button-add-task hide">
+          <input class="template-task__add-task__input" type="text" minlength="1" maxlength="100" required autofocus placeholder="Task description">
+          <button class="template-task__add-task__button">Save</button>
+        </section>
+      </div>
+    </template>
+  </main>
+  <script src="./script/script.js" type="module"></script>
+</body>
+</html>
